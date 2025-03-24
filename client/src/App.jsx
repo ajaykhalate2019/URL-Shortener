@@ -1,16 +1,16 @@
-import { useState } from 'react';
+import React from 'react';
 import './App.css'
-import UrlSearch from './components/urlSearch'
+import UrlSearch from './components/UrlSearch';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
       <UrlSearch/>
-      
     </>
   )
 }
 
-export default App
+export default App;

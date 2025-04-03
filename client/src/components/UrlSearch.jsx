@@ -79,7 +79,8 @@ const UrlSearch = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault(); 
-        axios.post("http://localhost:3000/short", { originalUrl })
+        //  axios.post("http://localhost:3000/short", { originalUrl })
+        axios.post("https://url-shortener-skj5.onrender.com/short", { originalUrl })
             .then((res) => {
                 setShortUrl(res.data.shortUrl);
                 setQrCodeImg(res.data.qrCodeImg);
